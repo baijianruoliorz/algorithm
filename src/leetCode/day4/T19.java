@@ -21,4 +21,5 @@ public class T19 {
         slow.next=slow.next.next;
         return head;
     }
+
 }
