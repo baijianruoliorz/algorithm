@@ -4,7 +4,7 @@ package algorithmReview;
  * @author liqiqi_tql
  * @date 2021/1/27 -11:33
  */
-public class sparseArray {
+public class SparseArray {
 //    P9 以五子棋为例 创建一个原始的二维数组11 * 11
 //    0: 表示没有旗子 1表示黑子 2表蓝子
 public static void main(String[] args) {
