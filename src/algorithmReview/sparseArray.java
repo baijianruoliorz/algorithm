@@ -54,6 +54,16 @@ public static void main(String[] args) {
     for (int i = 0; i < sparseArr.length; i++) {
         System.out.printf("%d\t%d\t%d\t\n",sparseArr[i][0],sparseArr[i][1],sparseArr[i][2]);
     }
+
+    //将稀疏数组返回到二维数组
+//    先读取稀疏数组第一行 得到原始二维数组
+    int chessArr2[][]=new int[sparseArr[0][0]][sparseArr[0][1]];
+//    在读取稀疏数组后几行的数据(从第二行开始),并赋值给原始二维数组即可
+    for (int i = 1; i < sparseArr.length; i++) {
+        chessArr2[sparseArr[i][0]][sparseArr[i][1]]=sparseArr[i][2];
+    }
+
 }
+
 
 }
