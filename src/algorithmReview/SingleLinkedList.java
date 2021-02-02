@@ -68,5 +68,36 @@ public class SingleLinkedList {
                 temp=temp.next;
             }
         }
+//        第二种方式添加英雄时 需要按照编号的顺序来添加
+//        如果有这个排名 则添加失败 并且给出提示
+        public void addByOrder(HeroNode heroNode){
+//            因为头结点不能动 因此我们需要通过一个辅助指针来帮助找到需要添加的位置
+            HeroNode temp=head;
+            boolean flag=false;
+            while (true){
+                if (temp.next==null){
+                    break;
+                }
+                if (temp.next.no>heroNode.no){
+//                    位置找到了 就在temp后面插入
+                    break;
+                }else if (temp.next.no==heroNode.no){
+//                    说明编号存在
+                    flag=true;
+                    break;
+                }
+//                后移 遍历当前链表
+                temp=temp.next;
+            }
+//            判断flag的值
+            if (flag){
+//                不能添加 说明编号存在
+                System.out.printf("准备插入的英雄的百年好%d 已经存在了 ,不能急加入\n",heroNode.no);
+            }else {
+//                插入到链表中
+                heroNode.next=temp.next;
+                temp.next=heroNode;
+            }
+        }
     }
 }
