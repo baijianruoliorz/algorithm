@@ -1,5 +1,10 @@
 package leetCode.day19;
 
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
 /**
  * @author liqiqi_tql
  * @date 2021/2/19 -18:03
@@ -28,6 +33,11 @@ public class T19 {
         }
 
     public static void main(String[] args) {
+        Queue<String> queue=new LinkedList<>();
+        HashMap<String, String> hashMap=new HashMap<>();
+        Stack<String> stack=new Stack<>();
+        LinkedList<String> queues = new LinkedList<>();
+
 
         ListNode listNode6 = new ListNode(11,null);
         ListNode listNode5 = new ListNode(11,listNode6);
