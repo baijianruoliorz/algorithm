@@ -37,6 +37,7 @@ public class T19 {
         HashMap<String, String> hashMap=new HashMap<>();
         Stack<String> stack=new Stack<>();
         LinkedList<String> queues = new LinkedList<>();
+        
 
 
         ListNode listNode6 = new ListNode(11,null);
