@@ -5,9 +5,9 @@ package leetCode.day4;
  * @date 2020/12/8 -14:07
  */
 public class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x){
+    public int val;
+    public ListNode next;
+    public ListNode(int x){
         val=x;
     }
 }
