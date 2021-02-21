@@ -8,7 +8,9 @@ public class T31 {
     class Solution {
         public void nextPermutation(int[] nums) {
             int n = 0;
-            if(nums == null || (n = nums.length) == 0)  return;
+            if(nums == null || (n = nums.length) == 0) {
+                return;
+            }
             // 从后往前查找第一次出现 nums[i] < nums[i+1] 的位置
             int i = n-2;
             for(; i>=0 && nums[i] >= nums[i+1]; i--)    ;
