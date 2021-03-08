@@ -28,7 +28,7 @@ public class T131 {
                 return;
             }
             for (int i=start;i<length;i++){
-                if (checkPalindrome(s,start,i)){
+                if (!checkPalindrome(s,start,i)){
                     continue;
                 }
                 stack.addLast(s.substring(start,i+1));
