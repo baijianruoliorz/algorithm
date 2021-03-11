@@ -24,8 +24,5 @@ public class T124 {
         int right = Math.max(0, dfs(root.right));
         max=Math.max(max,root.val+left+right);
         return root.val+Math.max(left,right);
-
-
-
     }
 }
