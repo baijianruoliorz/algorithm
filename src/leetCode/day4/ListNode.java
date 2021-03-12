@@ -10,4 +10,12 @@ public class ListNode {
     public ListNode(int x){
         val=x;
     }
+    public ListNode(int x,ListNode head){
+        this.next=head;
+        this.val=x;
+    }
+    public ListNode(ListNode head){
+        this.next=head;
+    }
+
 }
