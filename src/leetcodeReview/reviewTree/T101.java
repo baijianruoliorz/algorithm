@@ -21,6 +21,8 @@ public class T101 {
         if (left==null&&right==null){
             return true;
         }
+        int a=10;
+        
         if (left==null||right==null){
             return false;
         }
