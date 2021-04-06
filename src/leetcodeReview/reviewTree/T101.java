@@ -16,7 +16,6 @@ public class T101 {
         }
         return dfs(root.left,root.right);
     }
-
     private boolean dfs(TreeNode left, TreeNode right) {
         if (left==null&&right==null){
             return true;
