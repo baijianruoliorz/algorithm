@@ -12,6 +12,7 @@ public class T27 {
                 nums[i]=nums[j];
                 i++;
             }
+
         }
         return i;
     }
