@@ -17,6 +17,7 @@ public class IntegerTest {
         System.out.println("sadas");
 //          true  -128~127之间都是true
         System.out.println(e==f);
+//        true
         System.out.println(a.equals(b));
         System.out.println(a==b);
 //        false
