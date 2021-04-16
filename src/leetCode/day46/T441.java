@@ -5,24 +5,17 @@ package leetCode.day46;
  * @date 2021/4/16 -11:23
  */
 public class T441 {
-    public int arrangeCoins(int n){
-        int i=0;
-        while (sum(i)<n){
-            i++;
-        }
-        if (sum(i-1)==n) {
-            return i;
-        }else {
-            return i-1;
+    class Solution {
+        public int arrangeCoins(int n) {
+            long k = 1, sum = 1;
+            while (sum <= n) {
+                k++;
+                sum = (1 + k) * k / 2;
+            }
+            return (int) k - 1;
         }
     }
-    public int sum(int n){
-        int sum=0;
-        while (n!=0){
-            sum+=n;
-            n--;
-        }
-        return sum;
-    }
+
+
 
 }
