@@ -13,11 +13,6 @@ public class T341 {
         private List<Integer> vals;
         private Iterator<Integer> cur;
 
-        public NestedIterator(List<NestedInteger> nestedList) {
-            vals = new ArrayList<Integer>();
-            dfs(nestedList);
-            cur = vals.iterator();
-        }
 
         @Override
         public Integer next() {
@@ -29,14 +24,6 @@ public class T341 {
             return cur.hasNext();
         }
 
-        private void dfs(List<NestedInteger> nestedList) {
-            for (NestedInteger nest : nestedList) {
-                if (nest.isInteger()) {
-                    vals.add(nest.getInteger());
-                } else {
-                    dfs(nest.getList());
-                }
-            }
-        }
+
     }
 }
